@@ -137,7 +137,8 @@ body {
 }
 
 li,
-p {
+p,
+span {
   font-family: "Outfit", system-ui;
   font-size: 1.2rem;
 }
@@ -283,32 +284,33 @@ h6 {
   opacity: 0.4;
 }
 
-.instrc-ol-li {
-  list-style: none;
-  counter-reset: item;
-
-  color: hsl(30, 10%, 34%);
+.instrc-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-left: 1.1rem;
 }
 
-.instrc-ol-li > li {
-  counter-increment: item;
-  margin-bottom: 5px;
-  line-height: 1.5;
+.instrc-info {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
-.instrc-ol-li > li::before {
-  content: counter(item) ".";
+.instrc-info-span {
+  margin-right: 1.3rem;
   color: hsl(14, 45%, 36%);
-  width: 1.2em;
-  text-align: center;
-  display: inline-block;
   font-weight: bold;
 }
+
+.instrc-para {
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+}
+
+.span-bold-text2 {
+  color: hsl(30, 10%, 34%);
+}
+
 
 .instrc-section,
 .instrc-un-li {
@@ -355,11 +357,11 @@ h6 {
 }
 
 @media only screen and (min-width: 1024px) {
-   body {
-      background-color: hsl(30, 54%, 90%);
-      margin: 1rem;
-      display: flex;
-      justify-content: center;
+  body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
   }
   .main-container {
     width: 700px;
@@ -373,6 +375,6 @@ h6 {
   }
 
   .kcal-info-container > li {
-   width: 400px;
- }
+    width: 400px;
+  }
 }
