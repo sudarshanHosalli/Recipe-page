@@ -209,13 +209,14 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 13px;
-  margin-left: 1.3rem;
+  margin-left: 2rem;
 }
 
 .prep-unordered-list > li {
   display: flex;
   align-items: center;
   text-align: left;
+  padding: 5px 0;
 }
 
 .prep-unordered-list > li::before {
@@ -229,7 +230,8 @@ h6 {
 .span-bold-text {
   font-weight: 700;
   color: hsl(24, 5%, 18%);
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
+  margin: 0 0.3rem 0 1rem;
 }
 
 .span-bold-text2 {
@@ -340,13 +342,23 @@ h6 {
   gap: 20px;
 }
 
+.kcal-info-container {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
 .kcal-info-container > li {
   display: flex;
   align-items: center;
-  margin: 1.2rem 0 1.2rem 1.3rem;
-  width: 200px;
   justify-content: space-between;
   color: hsl(30, 10%, 34%);
+  border-bottom: 1px solid hsla(32, 10%, 34%, 0.322); 
+  padding: 1rem 5rem 1rem 2rem;
+}
+
+.kcal-info-container li:last-child {
+  border-bottom: none; 
 }
 
 .span-kcal-info {
@@ -374,7 +386,4 @@ h6 {
     border-radius: 15px;
   }
 
-  .kcal-info-container > li {
-    width: 400px;
-  }
 }
