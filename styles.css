@@ -277,11 +277,10 @@ h6 {
   line-height: 1.5rem;
 }
 
-.hr-line-section {
-  padding: 0 1.5rem;
-}
+
 
 .hr-line {
+  margin: 0 1.5rem;
   background-color: hsl(30, 10%, 34%);
   opacity: 0.4;
 }
